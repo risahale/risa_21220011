@@ -26,7 +26,7 @@ if uploaded_file is not None:
 
         # Pilih tipe chart
         chart_type = st.selectbox("Pilih tipe chart", ["Line Chart", "Area Chart", "Bar Chart"])
-
+   
         # Menampilkan chart sesuai tipe yang dipilih
         if chart_type == "Line Chart":
             st.line_chart(selected_data.set_index(x_column))
